@@ -38,3 +38,11 @@ jobs:
       run: |
         cd target
         ls -a
+
+    # Publish JAR Files
+    - name: Publish JAR
+      uses: actions/upload-artifact@v3
+      with:
+        name: java-app
+        path: |
+          **/target/*.jar
