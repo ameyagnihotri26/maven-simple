@@ -27,7 +27,7 @@ jobs:
 
     # Build & Test
     - name: Build & Test
-      run: mvn -B clean compile source:jar resources:testResources package install
+      run: mvn -B clean compile package
 
     # List the target folder
     - name: List the target folder
